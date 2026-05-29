@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Classical decorated animated background gradient */
+        .decorated-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.85);
+        }
+    </style>
+</head>
+<body class="decorated-bg text-slate-800 dark:text-slate-100 min-h-screen font-sans transition-colors duration-300">
+
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-white/20 shadow-lg px-6 py-4 flex justify-between items-center transition-colors duration-300">
+        <a href="#" class="text-2xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">SK.</a>
+        <div class="hidden md:flex space-x-8 font-semibold">
+            <a href="#about" class="hover:text-pink-600 transition">About</a>
+            <a href="#education" class="hover:text-pink-600 transition">Education</a>
+            <a href="#achievements" class="hover:text-pink-600 transition">Achievements</a>
+            <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                <i id="theme-icon" class="fas fa-moon text-xl"></i>
+            </button>
+            <a href="#contact" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-2 rounded-full font-medium shadow-md hover:opacity-90 transition">Hire Me</a>
+        </div>
+    </nav>
+
+    <section id="about" class="pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="w-64 h-64 md:w-80 md:h-98 rounded-full overflow-hidden border-4 border-white shadow-2xl shrink-0 glass-card">
+            <img src="IMG_20251011_221208.jpg.jpeg" alt="SANJAY THALLA" class="w-full h-full object-cover">
+        </div>
+        <div class="glass-card p-8 md:p-10 rounded-3xl shadow-xl flex-1 border border-white/20">
+            <span class="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider">Available for Opportunities</span>
+            <h1 class="text-4xl md:text-5xl font-black mt-4 mb-2">Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">SANJAY THALLA</span></h1>
+            <p class="text-xl font-medium text-slate-600 dark:text-slate-300 mb-6">Aspiring Professional & Tech Enthusiast</p>
+            <p class="leading-relaxed mb-6">
+                Motivated and detail-oriented B.Tech graduate looking to build a career in technology. Skilled in solving complex analytical problems, developing clean  architectures, and adapting to fast-paced team environments.
+            </p>
+            <div class="flex flex-wrap gap-4 mb-8">
+                <a href="mailto:sanjay@example.com" class="w-11 h-11 rounded-full bg-red-500 text-white flex items-center justify-center text-lg hover:scale-110 transition shadow-md"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919346083228" class="w-11 h-11 rounded-full bg-green-500 text-white flex items-center justify-center text-lg hover:scale-110 transition shadow-md"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/dashboard" target="_blank" class="w-11 h-11 rounded-full bg-slate-900 text-white flex items-center justify-center text-lg hover:scale-110 transition shadow-md"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank" class="w-11 h-11 rounded-full bg-sky-500 text-white flex items-center justify-center text-lg hover:scale-110 transition shadow-md"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sanjeevan.ai/" target="_blank" class="w-11 h-11 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white flex items-center justify-center text-lg hover:scale-110 transition shadow-md"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="flex flex-wrap gap-4">
+                <a href="SANJAYTHALLA_InternshalaResume (6).pdf" id="" class="bg-slate-900 dark:bg-white dark:text-slate-900 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-slate-800 transition flex items-center gap-2">
+                    <i class="fas fa-file-alt"></i> View Resume
+                </a>
+                <a href="SANJAYTHALLA_InternshalaResume (6).pdf" download class="border-2 border-slate-900 dark:border-white px-6 py-3 rounded-xl font-semibold hover:bg-slate-900/10 dark:hover:bg-white/10 transition flex items-center gap-2">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-black text-center text-white drop-shadow-md mb-12">Educational Journey</h2>
+        <div class="relative border-l-4 border-white/40 ml-4 md:ml-32 space-y-12">
+            
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[14px] top-1.5 w-6 h-6 rounded-full bg-purple-600 border-4 border-white group-hover:scale-120 transition"></div>
+                <div class="glass-card p-6 rounded-2xl shadow-xl border border-white/20 transform hover:-translate-y-1 transition duration-300">
+                    <span class="text-sm font-bold text-purple-600 dark:text-purple-400">2022 - 2026</span>
+                    <h3 class="text-2xl font-bold mt-1">Bachelor of Technology (B.Tech)</h3>
+                    <p class="text-slate-600 dark:text-slate-300 font-medium">Artificial Intelligence and Machine Learning</p>
+                    <p class="text-sm text-slate-500 mt-1">JNTU Hyderabad / Shadan College of Engineering and Technology</p>
+                    <div class="mt-4 inline-block bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 font-bold px-3 py-1 rounded-lg">
+                        CGPA / Percentage: 7.5 / 10 (75%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[14px] top-1.5 w-6 h-6 rounded-full bg-pink-500 border-4 border-white group-hover:scale-120 transition"></div>
+                <div class="glass-card p-6 rounded-2xl shadow-xl border border-white/20 transform hover:-translate-y-1 transition duration-300">
+                    <span class="text-sm font-bold text-pink-500 dark:text-pink-400">2020 - 2022</span>
+                    <h3 class="text-2xl font-bold mt-1">Intermediate (Class XII)</h3>
+                    <p class="text-slate-600 dark:text-slate-300 font-medium">
+                        <p> MPC (Maths, Physics, Chemistry)</p>
+                        <p>State Board Secondary Education Telangana,</p>
+                    </p>
+                    <p class="text-sm text-slate-500 mt-1">Shanthinikethan Junior College</p>
+                    <div class="mt-4 inline-block bg-pink-100 dark:bg-pink-900/40 text-pink-700 dark:text-pink-300 font-bold px-3 py-1 rounded-lg">
+                        Percentage: 962/1000 (96%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[14px] top-1.5 w-6 h-6 rounded-full bg-blue-500 border-4 border-white group-hover:scale-120 transition"></div>
+                <div class="glass-card p-6 rounded-2xl shadow-xl border border-white/20 transform hover:-translate-y-1 transition duration-300">
+                    <span class="text-sm font-bold text-blue-500 dark:text-blue-400">2019 - 2020</span>
+                    <h3 class="text-2xl font-bold mt-1">Secondary School Certificate (10th)</h3>
+                    <p class="text-slate-600 dark:text-slate-300 font-medium">State Board Telangana</p>
+                    <p class="text-sm text-slate-500 mt-1">Shanthinikethan High School </p>
+                    <div class="mt-4 inline-block bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-bold px-3 py-1 rounded-lg">
+                        GPA / Percentage: 10 / 10 (100%)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="achievements" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-black text-center text-white drop-shadow-md mb-12">Key Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-6 rounded-2xl shadow-xl border border-white/20 flex gap-4 items-start transform hover:scale-105 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 text-xl shadow-md"><i class="fas fa-trophy"></i></div>
+                <div>
+                    <h3 class="font-bold text-xl mb-1">Quiz Finalist</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Participated & excelled in prestigious campus technical quizzes.</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl shadow-xl border border-white/20 flex gap-4 items-start transform hover:scale-105 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-blue-500 text-white flex items-center justify-center shrink-0 text-xl shadow-md"><i class="fas fa-award"></i></div>
+                <div>
+                    <h3 class="font-bold text-xl mb-1">Skill Badge Holder</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Earned foundational and discoverer badges from National Digital Skill initiatives.</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl shadow-xl border border-white/20 flex gap-4 items-start transform hover:scale-105 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 text-xl shadow-md"><i class="fas fa-certificate"></i></div>
+                <div>
+                    <h3 class="font-bold text-xl mb-1">Continuous Learner</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Successfully completed specialized structural course certifications in modern engineering tools.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="glass-card p-8 rounded-3xl shadow-xl border border-white/20">
+            <h2 class="text-3xl font-black mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Personal Profile</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                    <span class="font-semibold text-slate-500 dark:text-slate-400">Full Name:</span>
+                    <span class="font-bold">Sanjay Thalla</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                    <span class="font-semibold text-slate-500 dark:text-slate-400">Father's Name:</span>
+                    <span class="font-bold">Anjaiah Thalla</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                    <span class="font-semibold text-slate-500 dark:text-slate-400">Email:</span>
+                    <a href="mailto:sanjaythalla5@gmail.com" class="font-bold text-pink-600 hover:underline">sanjaythalla5@gmail.com</a>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                    <span class="font-semibold text-slate-500 dark:text-slate-400">Phone:</span>
+                    <span class="font-bold">+91 93460 83228</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                    <span class="font-semibold text-slate-500 dark:text-slate-400">Languages:</span>
+                    <span class="font-bold">English, Hindi</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl shadow-xl border border-white/20">
+            <h2 class="text-3xl font-black mb-6 text-slate-800 dark:text-white">Get In Touch</h2>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold mb-1">Your Name</label>
+                    <input type="text" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 focus:ring-2 focus:ring-purple-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Your Email</label>
+                    <input type="email" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 focus:ring-2 focus:ring-purple-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Message</label>
+                    <textarea rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 focus:ring-2 focus:ring-purple-500 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 rounded-xl shadow-md hover:opacity-95 transition">
+                    Send Message <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 text-white/80 drop-shadow-sm font-medium">
+        <p>&copy; 2026 Sanjay Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <div id="resume-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 relative border border-white/10">
+            <button id="close-modal" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 dark:hover:text-white text-2xl"><i class="fas fa-times"></i></button>
+            <h3 class="text-2xl font-black mb-4">Sanjay Kumar | Curriculum Vitae</h3>
+            <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                <p><strong>Objective:</strong> Seeking an entry-level position to apply my logical thinking, technology skills, and educational background toward company advancement.</p>
+                <hr class="border-slate-200 dark:border-slate-700">
+                <p><strong>Education:</strong> B.Tech (85%), Intermediate (92%), 10th Grade (93%).</p>
+                <hr class="border-slate-200 dark:border-slate-700">
+                <p><strong>Core Strengths:</strong> Problem Solving, Rapid Upskilling, Adaptive Technical Collaboration.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. Advanced Dark/Light Mode Switch Engine
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        // Check system preferences or cached theme settings
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.className = 'fas fa-sun text-xl text-amber-400';
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIcon.className = 'fas fa-moon text-xl';
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                themeIcon.className = 'fas fa-moon text-xl';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                themeIcon.className = 'fas fa-sun text-xl text-amber-400';
+            }
+        });
+
+        // 2. Interactive Modal Manager for Resume previewing
+        const viewResumeBtn = document.getElementById('view-resume');
+        const closeModalBtn = document.getElementById('close-modal');
+        const resumeModal = document.getElementById('resume-modal');
+
+        const toggleModal = (show) => {
+            if(show) {
+                resumeModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevents background body scrolling
+            } else {
+                resumeModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        };
+
+        viewResumeBtn.addEventListener('click', (e) => { e.preventDefault(); toggleModal(true); });
+        closeModalBtn.addEventListener('click', () => toggleModal(false));
+        resumeModal.addEventListener('click', (e) => { if(e.target === resumeModal) toggleModal(false); });
+
+        // 3. Form Validation and Async Submission UI Experience
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            // Simulating an asynchronous endpoint handling action safely
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner animate-spin"></i> Sending...';
+            
+            setTimeout(() => {
+                alert('Thank you for reaching out, Sanjay Kumar will respond shortly!');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+                this.reset();
+            }, 1800);
+        });
+    </script>
+</body>
+</html>
